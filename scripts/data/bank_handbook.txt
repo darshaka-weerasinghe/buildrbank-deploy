@@ -1,0 +1,133 @@
+BUILDRBANK CUSTOMER HANDBOOK
+
+Welcome to BuildrBank. This handbook explains our products, policies, fees, and how to get help.
+
+ABOUT BUILDRBANK
+
+BuildrBank is a full-service commercial bank headquartered in Colombo, Sri Lanka, licensed by the Central Bank of Sri Lanka. We serve retail, business, and corporate customers. We were founded in 2019. Total assets: LKR 250 billion as of Q1 2026. We operate 32 branches across Sri Lanka.
+
+Our mission is to make modern digital banking accessible to every Sri Lankan business and household. We combine a full retail branch network with a modern mobile-first digital experience.
+
+ACCOUNT TYPES
+
+BuildrBank offers five main deposit account products:
+
+Savings Account. Everyday savings for individuals. Interest rate 4.5% per annum, paid monthly. Minimum opening balance LKR 5,000. No monthly maintenance fee. Free BuildrBank debit card. Interest is subject to withholding tax at prevailing rates.
+
+Checking Account. Non-interest-bearing transactional account for individuals. Minimum opening balance LKR 2,000. Monthly maintenance fee LKR 500, waived for balances above LKR 20,000. Unlimited domestic transactions. Free chequebook with first 20 leaves.
+
+Business Checking. Transactional account for registered businesses. Interest rate 0.5% per annum. Minimum opening balance LKR 50,000. Includes 20 free domestic wire transfers per month; additional wires are LKR 500 each. Business debit card and access to Business Online Banking.
+
+Fixed Deposit. Locked-in savings for a specified term. Interest rate 7.5% per annum for a 12-month term, 8.2% per annum for a 24-month term. Minimum deposit LKR 25,000. Interest paid at maturity or monthly, at customer's choice. Early withdrawal triggers a penalty of 1% of the deposit plus interest forfeiture for the current period.
+
+Foreign Currency Account. Deposits in USD, EUR, or GBP. Interest rate 2.5% per annum. Minimum opening balance equivalent to LKR 100,000. Useful for exporters, freelancers with foreign clients, and customers with foreign expenses.
+
+FEES AND CHARGES
+
+Wire transfers. Domestic wire transfer: LKR 1,500 per transfer. Business Checking customers get 20 free domestic wires per month, then LKR 500 per additional wire. International wire transfer: USD 25 per transfer plus correspondent bank fees. Correspondent bank fees typically range USD 5 to USD 30 depending on the destination country and bank.
+
+ATM. Withdrawal at BuildrBank ATMs: free. Withdrawal at other domestic banks' ATMs: LKR 100 per withdrawal. Withdrawal at international ATMs: LKR 500 per withdrawal plus foreign exchange conversion (spot rate + 1.5% margin).
+
+Overdraft. Occurrence fee LKR 500 per instance. Interest 24% per annum on the overdrawn balance until repaid. Overdraft protection can be enabled or disabled in the mobile app.
+
+Card replacement. LKR 500 for standard replacement. Emergency same-day replacement LKR 1,500.
+
+Statements. Free electronic statements via mobile app or email. Printed statement LKR 200 per statement.
+
+Chequebook. First 20 leaves free for Checking and Business Checking accounts. Additional chequebook LKR 350 for 20 leaves.
+
+Stop payment. LKR 500 per stop-payment instruction. Requires immediate mobile app or branch instruction.
+
+WIRE TRANSFERS AND SETTLEMENT
+
+Domestic wire transfers typically settle same-day if submitted before 3:00 PM Sri Lanka time. Wires submitted after 3:00 PM settle on the next business day. Weekend wires (submitted Friday after 3:00 PM through Sunday) settle on the next Monday.
+
+International wire transfers take 1 to 5 business days depending on the destination country and correspondent bank chain. US and UK destinations typically settle in 1-2 days. Other destinations may take 3-5 days.
+
+All wires are subject to compliance review. Wires over LKR 1,000,000 or equivalent may be held for enhanced due diligence and require additional documentation such as the invoice, contract, or source-of-funds declaration. Enhanced review typically takes 1 business day.
+
+Wire status can be tracked in the BuildrBank mobile app under Recent Transactions. Wires in the states "submitted", "in_review", "processing", "settled", or "returned" are visible. If a wire is delayed beyond the expected settlement window, customers should contact support with the wire reference number.
+
+Wire recall. Once a wire has settled at the recipient bank, BuildrBank cannot recall it unilaterally. Customers must contact the recipient to arrange a refund. If the wire is still in "processing" state, customers can request cancellation via the mobile app.
+
+LOAN PRODUCTS
+
+Personal Loan. Unsecured loan for personal use. Amount LKR 100,000 to LKR 5,000,000. Annual percentage rate 12% to 18% based on credit score and income. Term 12 to 60 months. No collateral required. Approval typically takes 5 to 7 business days.
+
+Home Loan. Secured by residential property. Amount up to LKR 50,000,000. Annual percentage rate 8.5% to 11%. Term 5 to 25 years. Requires property valuation and title search. Approval typically takes 10 to 15 business days.
+
+Auto Loan. Secured by the vehicle. Amount up to LKR 10,000,000. Annual percentage rate 10.5% to 14%. Term 12 to 72 months. Requires vehicle valuation. Approval typically takes 5 to 10 business days.
+
+Business Loan. For registered businesses. Amount up to LKR 100,000,000. Annual percentage rate 11% to 16%. Term 12 to 84 months. Requires 3 years of financial statements, business plan, and collateral for amounts above LKR 10,000,000.
+
+Loan applications require valid government-issued ID, proof of income covering the last 3 months, 3 months of bank statements, and property or collateral documentation if applicable. Applications can be started in the mobile app or at any branch.
+
+CREDIT CARDS
+
+BuildrBank Blue. Entry-level card. No annual fee. Annual percentage rate 24%. 1% cashback on all purchases. Credit limit LKR 50,000 to LKR 500,000 based on income.
+
+BuildrBank Gold. Mid-tier card. Annual fee LKR 5,000, waived for annual spend above LKR 500,000. Annual percentage rate 22%. 2% cashback on all purchases. Includes travel insurance and purchase protection. Credit limit LKR 500,000 to LKR 2,000,000.
+
+BuildrBank Platinum. Premium card. Annual fee LKR 15,000. Annual percentage rate 20%. 3% cashback on all purchases. Includes premium travel insurance, airport lounge access (unlimited), 24/7 concierge service, and complimentary global personal accident cover of USD 500,000. Credit limit LKR 2,000,000 and up.
+
+All cards support contactless payments, mobile wallet integration (Apple Pay, Google Pay), and tokenized virtual card numbers for online use.
+
+COMPLIANCE — KYC AND AML
+
+All customers must complete Know Your Customer verification before an account is fully activated. KYC requires submission of a valid government-issued photo ID (NIC, passport, or driver license), proof of address (utility bill dated within the last 3 months), and completion of a source-of-funds declaration.
+
+Business customers additionally submit certificate of incorporation, articles of association, most recent audited financial statements, and beneficial-owner disclosures for anyone holding 25% or more of the business.
+
+Enhanced due diligence applies to politically exposed persons, high-net-worth individuals, and transactions above LKR 1,000,000 or equivalent. Enhanced due diligence may involve source-of-wealth verification, additional documentation, and management approval.
+
+Suspicious activity is reported to the Financial Intelligence Unit of Sri Lanka per Section 6 of the Financial Transactions Reporting Act. BuildrBank is prohibited from disclosing to customers when a report has been filed.
+
+BUSINESS HOURS AND BRANCHES
+
+Main branch, Colombo Fort. Monday to Friday 8:30 AM to 4:30 PM. Saturday 9:00 AM to 12:30 PM. Closed Sunday and public holidays. Full service including safe deposit boxes, foreign exchange, and trade finance.
+
+Standard branches (31 locations across Sri Lanka). Monday to Friday 9:00 AM to 3:30 PM. Saturday 9:00 AM to 12:00 PM. Closed Sunday and public holidays.
+
+Selected branches operate extended hours until 6:00 PM on weekdays: Colombo Fort main, Kandy central, Galle central, Kurunegala, Negombo, and Ratnapura.
+
+Digital banking is available 24 hours a day, 7 days a week via the BuildrBank mobile app and web portal at buildrbank.lk.
+
+Branch locator and current wait times are available in the mobile app.
+
+CUSTOMER SUPPORT
+
+Phone. +94 11 234 5678, available 24 hours a day, 7 days a week. Multilingual support in English, Sinhala, and Tamil.
+
+Email. support@buildrbank.lk. Response typically within 24 hours for standard queries.
+
+Live chat. Available at buildrbank.lk/chat during business hours (Monday to Friday 8:00 AM to 8:00 PM, Saturday 9:00 AM to 4:00 PM).
+
+Branch appointments. Book a meeting with a personal banker via the mobile app or phone. Available Monday to Friday 9:00 AM to 3:30 PM at any branch.
+
+Complaint escalation. complaints@buildrbank.lk. Response within 5 business days. If not resolved, escalate to the Financial Ombudsman Sri Lanka.
+
+Fraud reporting. Emergency line +94 11 234 5000 for lost or stolen cards, unauthorized transactions, or suspected phishing. Available 24 hours.
+
+DIGITAL BANKING
+
+BuildrBank mobile app. Available for iOS (App Store) and Android (Google Play). Features include real-time account balances, complete transaction history, domestic and international wire transfers, bill payments to 200+ billers, mobile check deposit, card management (lock, unlock, replace, set travel notifications, set transaction limits), loan application and status tracking, appointment booking, notifications and transaction alerts, and biometric login (Face ID and fingerprint).
+
+Web portal. buildrbank.lk. Same features as mobile app. Requires 2FA via SMS or authenticator app.
+
+Security. All logins require 2FA. Transactions above LKR 100,000 require additional confirmation via mobile app biometric or SMS one-time password. Suspicious activity triggers automatic card freeze; customers are notified immediately by SMS and push notification.
+
+Digital-only savings accounts (no physical debit card, all servicing via app) receive a 0.5% annual interest rate boost — 5.0% instead of 4.5%.
+
+FOREIGN EXCHANGE
+
+BuildrBank offers competitive foreign exchange rates for cash and remittances. Currencies supported: USD, EUR, GBP, JPY, AUD, SGD, INR, CAD, CHF, and AED.
+
+Rates are updated twice daily (10:00 AM and 3:00 PM) based on interbank rates plus a customer margin of 0.75% for cash and 0.4% for account-to-account transfers.
+
+Foreign remittances (incoming). Free receipt for retail customers. Business customers pay LKR 500 flat fee per incoming remittance.
+
+Foreign remittances (outgoing). Same fees as international wire transfers (USD 25 plus correspondent bank fees).
+
+VERSION
+
+This handbook was last updated on July 1, 2026. The current version is always available in the BuildrBank mobile app and at buildrbank.lk/handbook.
