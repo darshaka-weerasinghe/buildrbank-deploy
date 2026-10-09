@@ -374,7 +374,7 @@ displays.</figcaption>
 
 <figure>
 <svg viewBox="0 0 900 340" role="img"
-     aria-label="apply_schema connects directly to Postgres to create tables, then seed.py embeds the handbook through OpenRouter and writes rows through the Supabase API; the same embedding model must be used at search time.">
+     aria-label="schema.sql is pasted into the Supabase SQL editor to create the tables, then seed.sql loads the rows and the pre-computed embeddings; the same embedding model must be used at search time.">
   <defs>
     <marker id="a4" viewBox="0 0 10 10" refX="9" refY="5"
             markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -387,7 +387,7 @@ displays.</figcaption>
   </defs>
 
   <rect x="16" y="28" width="212" height="76" rx="8" fill="none" stroke="currentColor" stroke-width="1.3"/>
-  <text x="38" y="54" font-size="12.5" font-weight="600" fill="currentColor">scripts/apply_schema.py</text>
+  <text x="38" y="54" font-size="12.5" font-weight="600" fill="currentColor">scripts/schema.sql</text>
   <text x="38" y="75" font-size="10.5" font-family="monospace" fill="currentColor" opacity=".6">runs schema.sql</text>
   <text x="38" y="92" font-size="10.5" font-family="monospace" fill="currentColor" opacity=".6">12 tables, 6 functions</text>
 
@@ -444,7 +444,7 @@ of reusing the notebook.</figcaption>
     <tr><td>app/settings.py</td><td>us</td><td>The handoff in figure 2. Renames the models for OpenRouter and redirects the memory file out of <code>vendor/</code></td></tr>
     <tr><td>app/index.html</td><td>us</td><td>The support console — conversation on the left, the agent's live procedure on the right</td></tr>
     <tr><td>vendor/buildrbank/</td><td>the cohort</td><td>25 files, byte-identical to <code>git archive origin/week-11</code>. <code>scripts/verify-vendor.sh</code> proves it</td></tr>
-    <tr><td>scripts/apply_schema.py</td><td>us</td><td>Creates the tables over a direct Postgres connection, so nobody touches the dashboard</td></tr>
+    <tr><td>scripts/schema.sql</td><td>us</td><td>Pasted into the Supabase SQL editor. Creates 12 tables and 6 search functions</td></tr>
     <tr><td>scripts/seed.py</td><td>us</td><td>Loads the bank's data and embeds the handbook with the model this deployment searches with</td></tr>
     <tr><td>scripts/check.py</td><td>us</td><td>Six checks, one at a time, so a failure names the thing that failed</td></tr>
     <tr><td>data/checkpoints.sqlite</td><td>the agent</td><td>The conversation and the procedure stack. One copy only — see below</td></tr>

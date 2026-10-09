@@ -38,16 +38,27 @@ build them from source: it looks like a twenty-minute hang, then fails.
 New project → any name → the region nearest you → generate the password and
 **write it down** (it is shown once). It takes about two minutes to build.
 
-### 2 · Run the schema
+### 2 · Run the SQL
 
-Supabase dashboard → **SQL Editor** → **New query** → paste all of
-[`scripts/schema.sql`](scripts/schema.sql) → **Run**.
+Supabase dashboard → **SQL Editor** → **New query** → paste → **Run**.
+Three files, in this order:
 
-That makes 12 tables and 6 search functions. It loads no data. It is safe to
-run twice.
+| | | |
+|---|---|---|
+| [`scripts/schema.sql`](scripts/schema.sql) | 12 tables, 6 search functions | no data |
+| [`scripts/seed-1-bank.sql`](scripts/seed-1-bank.sql) | customers, accounts, transactions | 5 KB |
+| [`scripts/seed-2-knowledge.sql`](scripts/seed-2-knowledge.sql) | the handbook and the procedures | 450 KB — give it a moment |
 
-> This is the one step with no command. Creating tables is not something an
-> API key is allowed to do.
+All three are safe to run more than once.
+
+> No terminal yet. Creating tables is not something an API key is allowed to
+> do, so this part happens in the browser.
+
+> **Why is file 2 so big?** Every handbook chunk carries a 1536-number
+> embedding, and those numbers cannot be written by hand. They were generated
+> with `openai/text-embedding-3-small` — the model `.env.example` pins
+> `EMBED_MODEL` to. Change that model and search silently returns nothing;
+> regenerate with `python scripts/seed.py` instead.
 
 ### 3 · Fill in your keys
 
@@ -60,15 +71,12 @@ Then open `.env` and fill it in. The Supabase values are in your project under
 
 `.env` is gitignored, and the Dockerfile never copies it. Keep it that way.
 
-### 4 · Install, and fill the tables
+### 4 · Install
 
 ```bash
 python3.12 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-
-python scripts/seed.py             # 3 customers, 4 accounts, 8 transactions,
-                                   # 6 procedures, the handbook in 25 pieces
 ```
 
 **Checkpoint —** `python scripts/check.py` prints six green ticks.
@@ -198,7 +206,8 @@ vendor/
   buildrbank/     the agent, copied verbatim. NEVER EDITED.
 scripts/
   schema.sql      the 12 tables and 6 search functions
-  seed.py         the data
+  seed-1-bank.sql, seed-2-knowledge.sql   the data
+  seed.py         only needed if you change the embedding model
   check.py        tests each piece before you start the server
 docs/             diagrams, and how it all fits together
 ```
