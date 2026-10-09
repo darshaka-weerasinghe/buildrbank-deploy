@@ -51,6 +51,12 @@ Three files, in this order:
 
 All three are safe to run more than once.
 
+> **Supabase will warn you: "Potential issues detected".** Choose
+> **Run without RLS** — not the green button. The app signs in with the
+> publishable key, and Row Level Security with no policies blocks every query
+> it makes. It fails deceptively: the seed files still load, so the tables look
+> correct, and only `check.py` tells you something is wrong.
+
 > No terminal yet. Creating tables is not something an API key is allowed to
 > do, so this part happens in the browser.
 
@@ -67,7 +73,8 @@ cp .env.example .env
 ```
 
 Then open `.env` and fill it in. The Supabase values are in your project under
-**Settings → API**. The model names are already filled in.
+**Project Overview** → the **Copy** button beside the project name. The model
+names are already filled in.
 
 `.env` is gitignored, and the Dockerfile never copies it. Keep it that way.
 
@@ -76,10 +83,14 @@ Then open `.env` and fill it in. The Supabase values are in your project under
 ```bash
 python3.12 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 **Checkpoint —** `python scripts/check.py` prints six green ticks.
+
+> **`python: command not found`?** The venv is not active in that terminal.
+> Run the `activate` line again — you need it in every new window. Use
+> `python`, not `python3`: a Windows venv does not create a `python3`.
 
 It tests settings, chat model, embeddings, database, handbook search, and one
 real message, one at a time, so when something is wrong you know *which* thing.
@@ -87,8 +98,12 @@ real message, one at a time, so when something is wrong you know *which* thing.
 ### 5 · Run it
 
 ```bash
-uvicorn app.api:api --reload --port 8000
+python -m uvicorn app.api:api --reload --port 8000
 ```
+
+> `python -m uvicorn`, not bare `uvicorn` — that guarantees the same
+> interpreter pip installed into, and cannot pick up some other `uvicorn`
+> left on your PATH by another project.
 
 **Checkpoint —** <http://localhost:8000> opens the chat page and answers you.
 
@@ -189,7 +204,7 @@ The small grey line under each reply shows which path the message took.
 |---|---|
 | **The page never loads** | The port is closed, or the app bound to `127.0.0.1`. Check the security group first. |
 | **The container exits immediately** | `docker logs bank`. Almost always a missing key in `.env`. |
-| **It answers, but knows nothing** | The database is empty, or it was seeded with a different embedding model. |
+| **It answers, but knows nothing** | `seed-2-knowledge.sql` did not finish, or `EMBED_MODEL` was changed. Re-run the file in the SQL editor. |
 
 Read the log *before* you change anything. The first error is the real one.
 
