@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------
+# What the agent itself needs (copied from the students' Week 11
+# requirements.txt, unchanged).
+# ---------------------------------------------------------------
+# PINNED, and the pin matters. The students wrote `anthropic>=0.109`, which
+# has no upper limit, so pip installs the newest 1.x - where `temperature`
+# was removed from messages.create(). The agent passes temperature=0 in six
+# places, so every message fails with a TypeError. 0.125.0 is the last
+# release of the line this code was written against.
+anthropic>=0.109,<1.0
+supabase>=2.6
+langfuse==4.6.1
+langgraph>=1.0
+langgraph-checkpoint-sqlite
+tavily-python
+openai>=1.40
+python-dotenv>=1.0
+httpx
+
+# ---------------------------------------------------------------
+# What WE add to put it on the web. This is the whole deployment.
+# ---------------------------------------------------------------
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# Note: the students' file also lists `mcp`. We leave it out on purpose.
+# The MCP servers in vendor/buildrbank/mcp_servers/ are not part of the
+# chat path - nothing we import ever touches them.

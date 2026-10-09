@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BuildrBank in Three Pictures</title>
+<style>
+:root{ --bg:#F6F7F9; --ink:#1A1D21; --muted:#5C6570; --line:#DDE1E6; --panel:#fff; }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#15181C; --ink:#EDEFF2; --muted:#9AA3AD; --line:#2A2F35; --panel:#1D2126; }
+}
+:root[data-theme="dark"]{ --bg:#15181C; --ink:#EDEFF2; --muted:#9AA3AD; --line:#2A2F35; --panel:#1D2126; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Helvetica,Arial,system-ui,sans-serif}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px 80px}
+header{padding:48px 0 22px}
+h1{margin:0 0 8px;font-size:28px;letter-spacing:-.02em}
+header p{margin:0;color:var(--muted)}
+h2{margin:46px 0 4px;font-size:18px;letter-spacing:-.01em}
+h2 + p{margin:0 0 16px;color:var(--muted);font-size:14px}
+figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 16px;overflow-x:auto}
+figure svg{display:block;width:100%;height:auto;min-width:660px}
+figcaption{margin-top:14px;padding-top:12px;border-top:1px solid #E6E8EB;color:#5C6570;font-size:13px}
+figcaption b{color:#1A1D21}
+figcaption code{font-family:ui-monospace,Menlo,monospace;font-size:12px;background:#F2F4F6;padding:1px 5px;border-radius:3px;color:#1A1D21}
+.key{margin:28px 0 0;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:6px;font-size:13.5px;color:var(--muted)}
+.key b{color:var(--ink)}
+.dl{margin-top:10px;font-size:12.5px;color:var(--muted)}
+.dl code{font-family:ui-monospace,Menlo,monospace}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>BuildrBank in three pictures</h1>
+  <p>How the code became a web address, and what happens when somebody types a message.</p>
+</header>
+
+<h2>1 · From code on a laptop to an address on the internet</h2>
+<p>Each arrow is one command.</p>
+<figure>
+<svg viewBox="0 0 1000 392" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Code becomes a Dockerfile, which builds an image, which runs as a container on EC2 reachable at a public URL. The settings file is handed in at run time, and on every message the container reaches out to Claude, Supabase and Langfuse.">
+  <defs>
+    <marker id="ar1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4D5156"/></marker>
+    <marker id="re1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#B85450"/></marker>
+
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8.5 7.5 3.5 12l5 4.5M15.5 7.5 20.5 12l-5 4.5" fill="none" stroke="#6c8ebf" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-docker" viewBox="0 0 24 24"><g fill="#2496ED"><rect x="2.1" y="10.6" width="3.9" height="3.3" rx=".35"/><rect x="6.6" y="10.6" width="3.9" height="3.3" rx=".35"/><rect x="11.1" y="10.6" width="3.9" height="3.3" rx=".35"/><rect x="6.6" y="6.9" width="3.9" height="3.3" rx=".35"/><rect x="11.1" y="6.9" width="3.9" height="3.3" rx=".35"/><rect x="11.1" y="3.2" width="3.9" height="3.3" rx=".35"/><path d="M1 14.6c0 3 2.1 5.1 5.5 5.1 5.1 0 9.2-2.4 11.1-7 1.6.5 3.2.1 4-1.1-1.1-.9-2.5-1-3.5-.5-.2-1.1-.9-1.9-1.9-2.4-.8 1-1 2.4-.4 3.4H1z"/></g></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><g fill="none" stroke="#82b366" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2.6 20.8 7v10L12 21.4 3.2 17V7z"/><path d="M3.2 7 12 11.4 20.8 7M12 11.4v10"/></g></symbol>
+  <symbol id="i-aws" viewBox="0 0 24 24"><text x="12" y="11" text-anchor="middle" font-size="8.5" font-weight="bold" font-family="Arial,Helvetica,sans-serif" fill="#232F3E">aws</text><path d="M3.2 15.2c5.2 3.3 12.4 3.3 17.6 0" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round"/><path d="M18.6 12.9 21.8 15 18.2 16.7z" fill="#FF9900"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="#d79b00" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4.1" ry="9"/><path d="M3.4 9.2h17.2M3.4 14.8h17.2"/></g></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="#b85450" stroke-width="2" stroke-linecap="round"><circle cx="7.4" cy="12" r="3.9"/><path d="M11.3 12H21M17.8 12v3.4M21 12v4.4"/></g></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="#777" stroke-width="2"><rect x="4.8" y="10.4" width="14.4" height="9.8" rx="2"/><path d="M8.4 10.4V7.6a3.6 3.6 0 017.2 0v2.8"/></g></symbol>
+  <symbol id="i-browser" viewBox="0 0 24 24"><g fill="none" stroke="#6c8ebf" stroke-width="1.8"><rect x="2.2" y="3.6" width="19.6" height="16.8" rx="2"/><path d="M2.2 8.6h19.6"/></g><circle cx="5.3" cy="6.1" r="1" fill="#6c8ebf"/><circle cx="8.3" cy="6.1" r="1" fill="#6c8ebf"/></symbol>
+  <symbol id="i-fastapi" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.4" fill="#009688"/><path d="M13.3 4.6 7 13.1h3.9l-.8 6.3L17 10.6h-4z" fill="#fff"/></symbol>
+  <symbol id="i-python" viewBox="0 0 24 24"><path d="M11.6 1.9c-2.4 0-4.2.9-4.2 2.9V7h4.4v.7H5.6C3.6 7.7 2.1 9.2 2.1 11.8c0 2.3 1.2 3.9 3 3.9h1.6v-2.5c0-1.9 1.6-3.3 3.5-3.3h4.2c1.6 0 2.9-1.3 2.9-2.9V4.8c0-1.7-2-2.9-5.7-2.9zM9.1 4c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9z" fill="#3776AB"/><path d="M12.4 22.1c2.4 0 4.2-.9 4.2-2.9V17h-4.4v-.7h6.2c2 0 3.5-1.5 3.5-4.1 0-2.3-1.2-3.9-3-3.9h-1.6v2.5c0 1.9-1.6 3.3-3.5 3.3H9.6c-1.6 0-2.9 1.3-2.9 2.9v3.2c0 1.7 2 2.9 5.7 2.9zM14.9 20c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9z" fill="#FFD343"/></symbol>
+  <symbol id="i-claude" viewBox="0 0 24 24"><g stroke="#D97757" stroke-width="2.2" stroke-linecap="round"><path d="M12 3.4v17.2M4.6 7.7l14.8 8.6M4.6 16.3l14.8-8.6"/></g></symbol>
+  <symbol id="i-supabase" viewBox="0 0 24 24"><path d="M13.4 1.4 4.1 13.3h7.1l-.6 9.3L19.9 10.7h-7.1z" fill="#3ECF8E"/></symbol>
+  <symbol id="i-langfuse" viewBox="0 0 24 24"><g fill="#7A8794"><rect x="2.6" y="4.2" width="16" height="3.1" rx="1.55"/><rect x="5.8" y="10.4" width="12.4" height="3.1" rx="1.55"/><rect x="9" y="16.6" width="9.2" height="3.1" rx="1.55"/></g></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M2.4 6.2a1.6 1.6 0 011.6-1.6h5l2 2.4h7.6a1.6 1.6 0 011.6 1.6v10a1.6 1.6 0 01-1.6 1.6H4a1.6 1.6 0 01-1.6-1.6z" fill="currentColor"/></symbol>
+  <symbol id="i-disk" viewBox="0 0 24 24"><g fill="none" stroke="#B8860B" stroke-width="1.9"><ellipse cx="12" cy="6" rx="8.2" ry="3.2"/><path d="M3.8 6v12c0 1.8 3.7 3.2 8.2 3.2s8.2-1.4 8.2-3.2V6"/><path d="M3.8 12c0 1.8 3.7 3.2 8.2 3.2s8.2-1.4 8.2-3.2"/></g></symbol>
+
+  </defs>
+  <rect x="610" y="8" width="152" height="60" rx="3" fill="#f8cecc" stroke="#b85450"/>
+  <use href="#i-key" x="622" y="26" width="22" height="22"/>
+  <text x="652" y="33" font-size="13" font-weight="bold" fill="#1A1D21">.env</text>
+  <text x="652" y="51" font-size="11" fill="#4D5156">7 secrets</text>
+  <line x1="686" y1="68" x2="686" y2="102" stroke="#B85450" marker-end="url(#re1)"/>
+  <text x="698" y="90" font-size="10.5" fill="#B85450">handed in at run time</text>
+  <rect x="16" y="102" width="152" height="104" rx="3" fill="#dae8fc" stroke="#6c8ebf"/>
+  <use href="#i-fastapi" x="62" y="112" width="24" height="24"/>
+  <use href="#i-python" x="92" y="112" width="24" height="24"/>
+  <text x="92" y="156" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1D21">Your code</text>
+  <text x="30" y="176" font-size="10.5" font-family="monospace" fill="#1A1D21">app/</text>
+  <text x="66" y="176" font-size="10.5" fill="#4D5156">FastAPI, by us</text>
+  <text x="30" y="194" font-size="10.5" font-family="monospace" fill="#1A1D21">vendor/</text>
+  <text x="79" y="194" font-size="10.5" fill="#4D5156">the agent</text>
+  <rect x="214" y="102" width="152" height="104" rx="3" fill="#dae8fc" stroke="#6c8ebf"/>
+  <use href="#i-docker" x="277.0" y="114" width="26" height="26"/>
+  <text x="290.0" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1D21">Dockerfile</text>
+  <text x="290.0" y="180" text-anchor="middle" font-size="11" fill="#4D5156">the packing recipe</text>
+  <rect x="412" y="102" width="152" height="104" rx="3" fill="#d5e8d4" stroke="#82b366"/>
+  <use href="#i-image" x="475.0" y="114" width="26" height="26"/>
+  <text x="488.0" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1D21">Image</text>
+  <text x="488.0" y="180" text-anchor="middle" font-size="11" fill="#4D5156">438 MB, a sealed box</text>
+  <rect x="610" y="102" width="152" height="104" rx="3" fill="#d5e8d4" stroke="#82b366"/>
+  <use href="#i-aws" x="673.0" y="114" width="26" height="26"/>
+  <text x="686.0" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1D21">Container</text>
+  <text x="686.0" y="180" text-anchor="middle" font-size="11" fill="#4D5156">running on EC2</text>
+  <rect x="808" y="102" width="176" height="104" rx="3" fill="#ffe6cc" stroke="#d79b00"/>
+  <use href="#i-globe" x="883.0" y="114" width="26" height="26"/>
+  <text x="896.0" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1D21">Public URL</text>
+  <text x="896.0" y="180" text-anchor="middle" font-size="11" fill="#4D5156">YOUR-IP:8000</text>
+  <line x1="168" y1="154" x2="212" y2="154" stroke="#4D5156" marker-end="url(#ar1)"/>
+  <line x1="366" y1="154" x2="410" y2="154" stroke="#4D5156" marker-end="url(#ar1)"/>
+  <text x="388.0" y="146" text-anchor="middle" font-size="10.5" fill="#4D5156">build</text>
+  <line x1="564" y1="154" x2="608" y2="154" stroke="#4D5156" marker-end="url(#ar1)"/>
+  <text x="586.0" y="146" text-anchor="middle" font-size="10.5" fill="#4D5156">run</text>
+  <line x1="762" y1="154" x2="806" y2="154" stroke="#4D5156" marker-end="url(#ar1)"/>
+  <text x="784.0" y="146" text-anchor="middle" font-size="10.5" fill="#4D5156">port</text>
+  <line x1="488" y1="206" x2="488" y2="224" stroke="#B85450" stroke-dasharray="4 4"/>
+  <text x="488" y="242" text-anchor="middle" font-size="11.5" fill="#B85450">the secrets are never inside the image</text>
+  <text x="92" y="230" text-anchor="middle" font-size="10.5" fill="#6c8ebf">FastAPI is what turns</text>
+  <text x="92" y="245" text-anchor="middle" font-size="10.5" fill="#6c8ebf">the agent into a website</text>
+  <rect x="808" y="222" width="176" height="56" rx="3" fill="#f5f5f5" stroke="#999"/>
+  <use href="#i-lock" x="822" y="238" width="22" height="22"/>
+  <text x="852" y="245" font-size="12" font-weight="bold" fill="#1A1D21">Security group</text>
+  <text x="852" y="263" font-size="10.5" fill="#4D5156">the only lock on the door</text>
+  <line x1="896" y1="222" x2="896" y2="208" stroke="#4D5156" marker-end="url(#ar1)"/>
+  <line x1="686" y1="206" x2="686" y2="274" stroke="#4D5156"/>
+  <text x="698" y="232" font-size="11" fill="#4D5156">on every message</text>
+  <path d="M270 274 H790" fill="none" stroke="#4D5156"/>
+  <line x1="270" y1="274" x2="270" y2="296" stroke="#4D5156" marker-end="url(#ar1)"/>
+  <line x1="530" y1="274" x2="530" y2="296" stroke="#4D5156" marker-end="url(#ar1)"/>
+  <line x1="790" y1="274" x2="790" y2="296" stroke="#4D5156" marker-end="url(#ar1)"/>
+  <rect x="160" y="300" width="220" height="72" rx="3" fill="#ffe6cc" stroke="#d79b00"/>
+  <use href="#i-claude" x="176" y="324" width="24" height="24"/>
+  <text x="210" y="332" font-size="12.5" font-weight="bold" fill="#1A1D21">Claude</text>
+  <text x="210" y="351" font-size="10.5" fill="#4D5156">via OpenRouter · the thinking</text>
+  <rect x="420" y="300" width="220" height="72" rx="3" fill="#ffe6cc" stroke="#d79b00"/>
+  <use href="#i-supabase" x="436" y="324" width="24" height="24"/>
+  <text x="470" y="332" font-size="12.5" font-weight="bold" fill="#1A1D21">Supabase</text>
+  <text x="470" y="351" font-size="10.5" fill="#4D5156">customers, wires, the handbook</text>
+  <rect x="680" y="300" width="220" height="72" rx="3" fill="#f5f5f5" stroke="#999"/>
+  <use href="#i-langfuse" x="696" y="324" width="24" height="24"/>
+  <text x="730" y="332" font-size="12.5" font-weight="bold" fill="#1A1D21">Langfuse</text>
+  <text x="730" y="351" font-size="10.5" fill="#4D5156">writes down what it did</text>
+</svg>
+<figcaption><b>Five steps across the top, and three things it cannot live without underneath.</b>
+The image is sealed and identical everywhere — the keys arrive separately when the container
+starts, which is what <code>.dockerignore</code> protects. But the box is not self-sufficient:
+every message reaches out to Claude to think, to Supabase for the bank's actual records, and
+to Langfuse to write down what happened. Cut the network and the container is still running
+and still useless.</figcaption>
+</figure>
+
+<h2>2 · What happens when somebody types a message</h2>
+<p>Ten to forty seconds, mostly spent waiting on other people's servers.</p>
+<figure>
+<svg viewBox="0 0 1000 304" role="img" aria-label="A message goes from the browser to FastAPI, which calls the agent. The agent talks to Claude for thinking, Supabase for the bank's data and Langfuse for recording, then the reply travels back.">
+  <defs>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4D5156"/></marker>
+    <marker id="re2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#B85450"/></marker>
+
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8.5 7.5 3.5 12l5 4.5M15.5 7.5 20.5 12l-5 4.5" fill="none" stroke="#6c8ebf" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-docker" viewBox="0 0 24 24"><g fill="#2496ED"><rect x="2.1" y="10.6" width="3.9" height="3.3" rx=".35"/><rect x="6.6" y="10.6" width="3.9" height="3.3" rx=".35"/><rect x="11.1" y="10.6" width="3.9" height="3.3" rx=".35"/><rect x="6.6" y="6.9" width="3.9" height="3.3" rx=".35"/><rect x="11.1" y="6.9" width="3.9" height="3.3" rx=".35"/><rect x="11.1" y="3.2" width="3.9" height="3.3" rx=".35"/><path d="M1 14.6c0 3 2.1 5.1 5.5 5.1 5.1 0 9.2-2.4 11.1-7 1.6.5 3.2.1 4-1.1-1.1-.9-2.5-1-3.5-.5-.2-1.1-.9-1.9-1.9-2.4-.8 1-1 2.4-.4 3.4H1z"/></g></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><g fill="none" stroke="#82b366" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2.6 20.8 7v10L12 21.4 3.2 17V7z"/><path d="M3.2 7 12 11.4 20.8 7M12 11.4v10"/></g></symbol>
+  <symbol id="i-aws" viewBox="0 0 24 24"><text x="12" y="11" text-anchor="middle" font-size="8.5" font-weight="bold" font-family="Arial,Helvetica,sans-serif" fill="#232F3E">aws</text><path d="M3.2 15.2c5.2 3.3 12.4 3.3 17.6 0" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round"/><path d="M18.6 12.9 21.8 15 18.2 16.7z" fill="#FF9900"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="#d79b00" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4.1" ry="9"/><path d="M3.4 9.2h17.2M3.4 14.8h17.2"/></g></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="#b85450" stroke-width="2" stroke-linecap="round"><circle cx="7.4" cy="12" r="3.9"/><path d="M11.3 12H21M17.8 12v3.4M21 12v4.4"/></g></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="#777" stroke-width="2"><rect x="4.8" y="10.4" width="14.4" height="9.8" rx="2"/><path d="M8.4 10.4V7.6a3.6 3.6 0 017.2 0v2.8"/></g></symbol>
+  <symbol id="i-browser" viewBox="0 0 24 24"><g fill="none" stroke="#6c8ebf" stroke-width="1.8"><rect x="2.2" y="3.6" width="19.6" height="16.8" rx="2"/><path d="M2.2 8.6h19.6"/></g><circle cx="5.3" cy="6.1" r="1" fill="#6c8ebf"/><circle cx="8.3" cy="6.1" r="1" fill="#6c8ebf"/></symbol>
+  <symbol id="i-fastapi" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.4" fill="#009688"/><path d="M13.3 4.6 7 13.1h3.9l-.8 6.3L17 10.6h-4z" fill="#fff"/></symbol>
+  <symbol id="i-python" viewBox="0 0 24 24"><path d="M11.6 1.9c-2.4 0-4.2.9-4.2 2.9V7h4.4v.7H5.6C3.6 7.7 2.1 9.2 2.1 11.8c0 2.3 1.2 3.9 3 3.9h1.6v-2.5c0-1.9 1.6-3.3 3.5-3.3h4.2c1.6 0 2.9-1.3 2.9-2.9V4.8c0-1.7-2-2.9-5.7-2.9zM9.1 4c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9z" fill="#3776AB"/><path d="M12.4 22.1c2.4 0 4.2-.9 4.2-2.9V17h-4.4v-.7h6.2c2 0 3.5-1.5 3.5-4.1 0-2.3-1.2-3.9-3-3.9h-1.6v2.5c0 1.9-1.6 3.3-3.5 3.3H9.6c-1.6 0-2.9 1.3-2.9 2.9v3.2c0 1.7 2 2.9 5.7 2.9zM14.9 20c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9z" fill="#FFD343"/></symbol>
+  <symbol id="i-claude" viewBox="0 0 24 24"><g stroke="#D97757" stroke-width="2.2" stroke-linecap="round"><path d="M12 3.4v17.2M4.6 7.7l14.8 8.6M4.6 16.3l14.8-8.6"/></g></symbol>
+  <symbol id="i-supabase" viewBox="0 0 24 24"><path d="M13.4 1.4 4.1 13.3h7.1l-.6 9.3L19.9 10.7h-7.1z" fill="#3ECF8E"/></symbol>
+  <symbol id="i-langfuse" viewBox="0 0 24 24"><g fill="#7A8794"><rect x="2.6" y="4.2" width="16" height="3.1" rx="1.55"/><rect x="5.8" y="10.4" width="12.4" height="3.1" rx="1.55"/><rect x="9" y="16.6" width="9.2" height="3.1" rx="1.55"/></g></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M2.4 6.2a1.6 1.6 0 011.6-1.6h5l2 2.4h7.6a1.6 1.6 0 011.6 1.6v10a1.6 1.6 0 01-1.6 1.6H4a1.6 1.6 0 01-1.6-1.6z" fill="currentColor"/></symbol>
+  <symbol id="i-disk" viewBox="0 0 24 24"><g fill="none" stroke="#B8860B" stroke-width="1.9"><ellipse cx="12" cy="6" rx="8.2" ry="3.2"/><path d="M3.8 6v12c0 1.8 3.7 3.2 8.2 3.2s8.2-1.4 8.2-3.2V6"/><path d="M3.8 12c0 1.8 3.7 3.2 8.2 3.2s8.2-1.4 8.2-3.2"/></g></symbol>
+
+  </defs>
+  <rect x="16" y="108" width="150" height="96" rx="3" fill="#dae8fc" stroke="#6c8ebf"/>
+  <use href="#i-browser" x="78.0" y="120" width="26" height="26"/>
+  <text x="91.0" y="168" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1D21">Customer</text>
+  <text x="91.0" y="186" text-anchor="middle" font-size="11" fill="#4D5156">in a browser</text>
+  <rect x="232" y="108" width="150" height="96" rx="3" fill="#d5e8d4" stroke="#82b366"/>
+  <use href="#i-fastapi" x="294.0" y="120" width="26" height="26"/>
+  <text x="307.0" y="168" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1D21">FastAPI</text>
+  <text x="307.0" y="186" text-anchor="middle" font-size="11" fill="#4D5156">the front door</text>
+  <rect x="448" y="96" width="172" height="120" rx="3" fill="#e1d5e7" stroke="#9673a6"/>
+  <use href="#i-python" x="521.0" y="108" width="26" height="26"/>
+  <text x="534.0" y="156" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A1D21">The agent</text>
+  <text x="534.0" y="174" text-anchor="middle" font-size="11" fill="#4D5156">decides what kind</text>
+  <text x="534.0" y="191" text-anchor="middle" font-size="11" fill="#4D5156">of question this is</text>
+  <line x1="166" y1="150" x2="230" y2="150" stroke="#4D5156" marker-end="url(#ar2)"/>
+  <text x="198" y="142" text-anchor="middle" font-size="10.5" fill="#4D5156">POST /chat</text>
+  <line x1="382" y1="150" x2="446" y2="150" stroke="#4D5156" marker-end="url(#ar2)"/>
+  <text x="414" y="142" text-anchor="middle" font-size="10.5" fill="#4D5156">turn()</text>
+  <rect x="736" y="10" width="248" height="70" rx="3" fill="#ffe6cc" stroke="#d79b00"/>
+  <use href="#i-claude" x="752" y="33" width="24" height="24"/>
+  <text x="786" y="41" font-size="12.5" font-weight="bold" fill="#1A1D21">Claude · via OpenRouter</text>
+  <text x="786" y="60" font-size="11" fill="#4D5156">the thinking. 2–5 calls a message</text>
+  <rect x="736" y="112" width="248" height="70" rx="3" fill="#ffe6cc" stroke="#d79b00"/>
+  <use href="#i-supabase" x="752" y="135" width="24" height="24"/>
+  <text x="786" y="143" font-size="12.5" font-weight="bold" fill="#1A1D21">Supabase</text>
+  <text x="786" y="162" font-size="11" fill="#4D5156">customers, wires, the handbook</text>
+  <rect x="736" y="214" width="248" height="70" rx="3" fill="#f5f5f5" stroke="#999"/>
+  <use href="#i-langfuse" x="752" y="237" width="24" height="24"/>
+  <text x="786" y="245" font-size="12.5" font-weight="bold" fill="#1A1D21">Langfuse</text>
+  <text x="786" y="264" font-size="11" fill="#4D5156">writes down what it did</text>
+  <line x1="620" y1="132" x2="734" y2="45" stroke="#4D5156" marker-end="url(#ar2)"/>
+  <line x1="620" y1="156" x2="734" y2="147" stroke="#4D5156" marker-end="url(#ar2)"/>
+  <line x1="620" y1="180" x2="734" y2="249" stroke="#4D5156" marker-end="url(#ar2)"/>
+  <path d="M448 216 L91 216 L91 206" fill="none" stroke="#4D5156" marker-end="url(#ar2)"/>
+  <text x="268" y="232" text-anchor="middle" font-size="10.5" fill="#4D5156">the reply travels back the same way</text>
+</svg>
+<figcaption><b>The agent does not know anything by itself.</b> It asks Claude how to word
+things, asks Supabase what is true, and tells Langfuse what it did. Take away the network
+and it can do nothing at all — which is why most of those seconds are spent waiting rather
+than computing.</figcaption>
+</figure>
+
+<h2>3 · What is inside the box</h2>
+<p>Three folders. Only one of them is ours.</p>
+<figure>
+<svg viewBox="0 0 1000 244" role="img" aria-label="The container holds three folders: app which we wrote, vendor the students' unchanged agent, and data the conversation file written while it runs.">
+  <defs>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8.5 7.5 3.5 12l5 4.5M15.5 7.5 20.5 12l-5 4.5" fill="none" stroke="#6c8ebf" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-docker" viewBox="0 0 24 24"><g fill="#2496ED"><rect x="2.1" y="10.6" width="3.9" height="3.3" rx=".35"/><rect x="6.6" y="10.6" width="3.9" height="3.3" rx=".35"/><rect x="11.1" y="10.6" width="3.9" height="3.3" rx=".35"/><rect x="6.6" y="6.9" width="3.9" height="3.3" rx=".35"/><rect x="11.1" y="6.9" width="3.9" height="3.3" rx=".35"/><rect x="11.1" y="3.2" width="3.9" height="3.3" rx=".35"/><path d="M1 14.6c0 3 2.1 5.1 5.5 5.1 5.1 0 9.2-2.4 11.1-7 1.6.5 3.2.1 4-1.1-1.1-.9-2.5-1-3.5-.5-.2-1.1-.9-1.9-1.9-2.4-.8 1-1 2.4-.4 3.4H1z"/></g></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><g fill="none" stroke="#82b366" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2.6 20.8 7v10L12 21.4 3.2 17V7z"/><path d="M3.2 7 12 11.4 20.8 7M12 11.4v10"/></g></symbol>
+  <symbol id="i-aws" viewBox="0 0 24 24"><text x="12" y="11" text-anchor="middle" font-size="8.5" font-weight="bold" font-family="Arial,Helvetica,sans-serif" fill="#232F3E">aws</text><path d="M3.2 15.2c5.2 3.3 12.4 3.3 17.6 0" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round"/><path d="M18.6 12.9 21.8 15 18.2 16.7z" fill="#FF9900"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="#d79b00" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4.1" ry="9"/><path d="M3.4 9.2h17.2M3.4 14.8h17.2"/></g></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="#b85450" stroke-width="2" stroke-linecap="round"><circle cx="7.4" cy="12" r="3.9"/><path d="M11.3 12H21M17.8 12v3.4M21 12v4.4"/></g></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="#777" stroke-width="2"><rect x="4.8" y="10.4" width="14.4" height="9.8" rx="2"/><path d="M8.4 10.4V7.6a3.6 3.6 0 017.2 0v2.8"/></g></symbol>
+  <symbol id="i-browser" viewBox="0 0 24 24"><g fill="none" stroke="#6c8ebf" stroke-width="1.8"><rect x="2.2" y="3.6" width="19.6" height="16.8" rx="2"/><path d="M2.2 8.6h19.6"/></g><circle cx="5.3" cy="6.1" r="1" fill="#6c8ebf"/><circle cx="8.3" cy="6.1" r="1" fill="#6c8ebf"/></symbol>
+  <symbol id="i-fastapi" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.4" fill="#009688"/><path d="M13.3 4.6 7 13.1h3.9l-.8 6.3L17 10.6h-4z" fill="#fff"/></symbol>
+  <symbol id="i-python" viewBox="0 0 24 24"><path d="M11.6 1.9c-2.4 0-4.2.9-4.2 2.9V7h4.4v.7H5.6C3.6 7.7 2.1 9.2 2.1 11.8c0 2.3 1.2 3.9 3 3.9h1.6v-2.5c0-1.9 1.6-3.3 3.5-3.3h4.2c1.6 0 2.9-1.3 2.9-2.9V4.8c0-1.7-2-2.9-5.7-2.9zM9.1 4c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9z" fill="#3776AB"/><path d="M12.4 22.1c2.4 0 4.2-.9 4.2-2.9V17h-4.4v-.7h6.2c2 0 3.5-1.5 3.5-4.1 0-2.3-1.2-3.9-3-3.9h-1.6v2.5c0 1.9-1.6 3.3-3.5 3.3H9.6c-1.6 0-2.9 1.3-2.9 2.9v3.2c0 1.7 2 2.9 5.7 2.9zM14.9 20c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9z" fill="#FFD343"/></symbol>
+  <symbol id="i-claude" viewBox="0 0 24 24"><g stroke="#D97757" stroke-width="2.2" stroke-linecap="round"><path d="M12 3.4v17.2M4.6 7.7l14.8 8.6M4.6 16.3l14.8-8.6"/></g></symbol>
+  <symbol id="i-supabase" viewBox="0 0 24 24"><path d="M13.4 1.4 4.1 13.3h7.1l-.6 9.3L19.9 10.7h-7.1z" fill="#3ECF8E"/></symbol>
+  <symbol id="i-langfuse" viewBox="0 0 24 24"><g fill="#7A8794"><rect x="2.6" y="4.2" width="16" height="3.1" rx="1.55"/><rect x="5.8" y="10.4" width="12.4" height="3.1" rx="1.55"/><rect x="9" y="16.6" width="9.2" height="3.1" rx="1.55"/></g></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M2.4 6.2a1.6 1.6 0 011.6-1.6h5l2 2.4h7.6a1.6 1.6 0 011.6 1.6v10a1.6 1.6 0 01-1.6 1.6H4a1.6 1.6 0 01-1.6-1.6z" fill="currentColor"/></symbol>
+  <symbol id="i-disk" viewBox="0 0 24 24"><g fill="none" stroke="#B8860B" stroke-width="1.9"><ellipse cx="12" cy="6" rx="8.2" ry="3.2"/><path d="M3.8 6v12c0 1.8 3.7 3.2 8.2 3.2s8.2-1.4 8.2-3.2V6"/><path d="M3.8 12c0 1.8 3.7 3.2 8.2 3.2s8.2-1.4 8.2-3.2"/></g></symbol>
+
+  </defs>
+  <rect x="16" y="14" width="968" height="214" rx="4" fill="#fafafa" stroke="#999" stroke-dasharray="6 4"/>
+  <use href="#i-docker" x="34" y="28" width="22" height="22"/>
+  <text x="64" y="44" font-size="12" font-weight="bold" fill="#4D5156">THE CONTAINER</text>
+  <rect x="36" y="64" width="296" height="150" rx="3" fill="#d5e8d4" stroke="#82b366"/>
+  <use href="#i-folder" x="54" y="80" width="20" height="20" color="#82b366"/>
+  <text x="82" y="96" font-size="13" font-weight="bold" fill="#1A1D21">app/ — we wrote this</text>
+  <text x="56" y="124" font-size="11.5" font-family="monospace" fill="#1A1D21">api.py</text>
+  <text x="148" y="124" font-size="11.5" fill="#4D5156">the web address</text>
+  <text x="56" y="146" font-size="11.5" font-family="monospace" fill="#1A1D21">settings.py</text>
+  <text x="148" y="146" font-size="11.5" fill="#4D5156">where the keys go</text>
+  <text x="56" y="168" font-size="11.5" font-family="monospace" fill="#1A1D21">index.html</text>
+  <text x="148" y="168" font-size="11.5" fill="#4D5156">the chat page</text>
+  <text x="56" y="198" font-size="11" fill="#82b366">three files, about 900 lines</text>
+  <rect x="356" y="64" width="296" height="150" rx="3" fill="#e1d5e7" stroke="#9673a6"/>
+  <use href="#i-folder" x="374" y="80" width="20" height="20" color="#9673a6"/>
+  <text x="402" y="96" font-size="13" font-weight="bold" fill="#1A1D21">vendor/ — the students'</text>
+  <text x="376" y="124" font-size="11.5" fill="#4D5156">the agent itself</text>
+  <text x="376" y="146" font-size="11.5" fill="#4D5156">25 files, built over 11 weeks</text>
+  <text x="376" y="168" font-size="11.5" fill="#4D5156">memory, tools, the graph</text>
+  <text x="376" y="198" font-size="11" fill="#9673a6">not one line changed</text>
+  <rect x="676" y="64" width="288" height="150" rx="3" fill="#fff2cc" stroke="#d6b656"/>
+  <use href="#i-disk" x="694" y="80" width="20" height="20" color="#B8860B"/>
+  <text x="722" y="96" font-size="13" font-weight="bold" fill="#1A1D21">data/ — written as it runs</text>
+  <text x="696" y="124" font-size="11.5" fill="#4D5156">the conversation so far</text>
+  <text x="696" y="146" font-size="11.5" fill="#4D5156">which step of a procedure</text>
+  <text x="696" y="168" font-size="11.5" fill="#4D5156">what you have told it</text>
+  <text x="696" y="198" font-size="11" fill="#B8860B">dies with the container</text>
+</svg>
+<figcaption><b>The yellow folder is the catch.</b> It lives inside the container, so a
+restart forgets every conversation, and a second copy of the server would keep its own
+separate memory — the same customer would get two different agents. Moving that folder
+into a real database is the next step.</figcaption>
+</figure>
+
+<div class="key">
+<b>The one sentence version.</b> We wrote three files and a packing recipe, sealed them
+with the students' unchanged agent into an image, ran that image on a rented computer,
+opened one port, and handed the keys in from outside. Everything the agent actually knows
+lives somewhere else — in Claude, in Supabase, and for now in one small file that does not
+survive a restart.
+<div class="dl">Each picture is also beside this file as <code>.svg</code> (sharp at any size, editable)
+and <code>.png</code> at 2× (drop straight into slides).</div>
+</div>
+
+</div>
+</body>
+</html>
